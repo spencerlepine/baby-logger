@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home | Baby Feeding</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="images/favicon.png">
+
+		<script src="scripts/menuNavBar.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>	
+	</head>
+	<body>
+		<header>
+			<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="#"><img class="icon" src="images/house.png" alt="Home Icon"></a>
+				<a href="add.html"><img class="icon" src="images/new.png" alt="New Icon"></a>
+				<a href="erase.html"><img class="icon" src="images/remove.png" alt="Remove Icon"></a>
+				<a href="edit.html"><img class="icon" src="images/update.png" alt="Update Icon"></a>
+				<a href="backup.html"><img class="icon" src="images/backup.png" alt="Backup Icon"></a>
+			  </div>
+			</div>
+
+			<span id="openMenuSpan" style="font-size:30px;cursor:pointer;display:none;" onclick="openNav()">&#9776;</span>
+			
+			<ul>
+				<li id="active">
+					<a href="#"><img class="icon" src="images/house.png" alt="Home Icon"></a>
+				</li>
+				<li>
+					<a href="add.html"><img class="icon" src="images/new.png" alt="New Icon"></a>
+				</li>
+				<li>
+					<a href="erase.html"><img class="icon" src="images/remove.png" alt="Remove Icon"></a>
+				</li>
+				<li>
+					<a href="edit.html"><img class="icon" src="images/update.png" alt="Update Icon"></a>
+				</li>
+				<li>
+					<a href="backup.html"><img class="icon" src="images/backup.png" alt="Update Icon"></a>
+				</li>
+			</ul>
+		</header>
+
+		<div id="wrapper">
+			<div id="chart-display">
+				<div id="drop-down">
+					<div class="select">
+					  <select onchange="getDropDown(this[this.selectedIndex].value)">
+					    <option value="0">Comparison Chart</option>
+					    <option value="1">Diapers</option>
+					    <option value="2">Milk</option>
+					    <option value="3">Formula</option>
+					  </select>
+					  <div class="select_arrow"></div>
+					</div>
+				</div>
+
+				<div id="diaper_chart_div" class="chart" style="width: 100%; height: 500px;">diapers</div>
+
+				<div id="milk_chart_div" class="chart" style="width: 100%; height: 500px;">milk</div>
+
+				<div id="formula_chart_div" class="chart" style="width: 100%; height: 500px;">formula</div>
+
+				<div id="comparison_chart_div" class="chart" style="width: 100%; height: 500px;"></div>
+			</div>
+		</div>
+
+		<script src="scripts/makeGraph.js"></script>
+		<script src="scripts/displayData.js"></script>
+	</body>
+</html>

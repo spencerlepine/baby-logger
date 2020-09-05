@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Erase | Baby Feeding</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="images/favicon.png">
+
+		<script src="scripts/menuNavBar.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div class="overlay-content">
+			    <a href="index.html"><img class="icon" src="images/house.png" alt="Home Icon"></a>
+				<a href="add.html"><img class="icon" src="images/new.png" alt="New Icon"></a>
+				<a href="#"><img class="icon" src="images/remove.png" alt="Remove Icon"></a>
+				<a href="edit.html"><img class="icon" src="images/update.png" alt="Update Icon"></a>
+				<a href="backup.html"><img class="icon" src="images/backup.png" alt="Backup Icon"></a>
+			  </div>
+			</div>
+
+			<span id="openMenuSpan" style="font-size:30px;cursor:pointer;display:none;" onclick="openNav()">&#9776;</span>
+			
+			<ul>
+				<li>
+					<a href="index.html"><img class="icon" src="images/house.png" alt="Home Icon"></a>
+				</li>
+				<li>
+					<a href="add.html"><img class="icon" src="images/new.png" alt="New Icon"></a>
+				</li>
+				<li id="active">
+					<a href="#"><img class="icon" src="images/remove.png" alt="Remove Icon"></a>
+				</li>
+				<li>
+					<a href="edit.html"><img class="icon" src="images/update.png" alt="Update Icon"></a>
+				</li>
+				<li>
+					<a href="backup.html"><img class="icon" src="images/backup.png" alt="Backup Icon"></a>
+				</li>
+			</ul>
+		</header>
+
+		<div class="box">
+			<div id="remove-instructions">
+				<p><b>Mistake? </b>Select the date to delete.<br></p>
+			</div>
+
+			<form oninput="x.value=`Delete ${day.value}?`">
+				<label for="day">Date:</label>
+				<input type="date" id="day" name="day" required>
+
+				<div style="width: fit-content; margin-left: auto; margin-right: auto;">
+					<output name="x" for="day" value="2">Please choose a date.</output>
+				</div>
+
+				<div id="erase-btn-div">
+					<button type="button" id="btnInsert" class="btn-block" onclick="deleteDate()">Delete</button>
+        		</div>
+			</form>
+		</div>
+
+		<div class="box">
+			<div id="warning-text-div">
+				<p><b>Warning: </b>Click this to remove<br> all of the locally stored data..</p>
+			</div>
+			<div id="erase-btn-div">
+				<button type="button" onclick="clearMyDatabase()" id="erase-btn">Erase!</button>
+			</div>
+		</div>
+
+		<script src="scripts/addTodatabase.js"></script>
+	</body>
+</html>		
+
+
+
+
+	
+
+
+
+		
