@@ -6,6 +6,10 @@
 
 ---
 
+## Credit:
+	This project uses the ```Google Charts``` javascript library. I give full credit to the creators and claim none of their work.
+---
+
 ## Setup
  - Download Zip to run locally, or access the site from GitHub pages <a href="http://babyfeeder-github.io" target="_blank">`babyfeeder-github.io`</a>
  - The baby log is stored using ```localStorage``` in the browser. User data will not sync across devices; once started, only use the exact same browser + device to be continue building the list/graph data (see 'Backup' section for help). 
