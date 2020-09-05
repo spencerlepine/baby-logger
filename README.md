@@ -7,7 +7,7 @@
 ---
 
 ## Credit:
-	This project uses the ```Google Charts``` javascript library. I give full credit to the creators and claim none of their work.
+- This project uses the ```Google Charts``` javascript library. I give full credit to the creators and claim none of their work.
 ---
 
 ## Setup
