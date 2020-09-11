@@ -331,3 +331,45 @@ button:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/*EDIT FORM PAGE*/
+.hiddenForm {
+	display: none;
+	transition: 0.5s;
+}
+
+/*https://codepen.io/thenocturnalfey/pen/jOEjaZR Thanks to Tremaine Eto */
+.smoothFormAppear {
+	display: block!important;
+
+	animation: fadeIn ease 4s;
+	-webkit-animation: fadeIn ease 4s;
+	-moz-animation: fadeIn ease 4s;
+	-o-animation: fadeIn ease 4s;
+	-ms-animation: fadeIn ease 4s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

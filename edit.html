@@ -45,8 +45,64 @@
 		</header>
 
 		<div id="wrapper">
-			<p>Under construction</p>
+			<!--<div class="box">
+				<div id="remove-instructions">
+					<p>Select the date to edit:<br></p>
+				</div>
+
+				
+			</div> -->
+
+			<!-- 
+				Use a form to select a date
+
+				Retrieve day from arrays
+
+				Send those values to input form
+
+				Submit button to write that back (Overwrite another day even if it is already in array) 
+				
+
+			-->
+
+			<div id="main-form">
+				<form oninput="sendToForm(this)">
+					<div id="remove-instructions">
+						<p>Select the date to edit:<br></p>
+					</div>
+
+					<label for="day">Date:</label>
+					<input type="date" id="day" name="day" required>
+				</form>
+
+				<br>
+
+				<form oninput="x.value=`${a.value} oz`" class="hiddenForm">
+					<label for="diapers">New diaper value?</label><br>
+		  			<input type="text" id="diapers" value="25"><br>
+
+		  			<br>
+
+		  			<label for="formula">How many ounces of formula?</label><br>
+					<input type="range" id="formulaOunces" name="a" value="25" min="0" max="50">
+					<output name="x" id="formulaOutput">25 oz</output><br>
+
+					<br>
+		  			
+					<label for="milk">How many ounces of milk?</label><br>
+					<input type="number" id="milkOunces" name="b" value="25"><br>
+					
+					<br>
+
+					<!-- <input type="submit" value="Submit"> -->
+					<div class="btn-block">
+						<button type="button" id="btnInsert" class="btn-block" onclick="updateStorage()">Update</button>
+	        		</div>
+				</form>
+			</div>
 		<div>
+
+		<script src="scripts/editDatabase.js"></script>
 	</body>
 </html>		
 
