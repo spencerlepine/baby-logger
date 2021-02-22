@@ -11,7 +11,7 @@
 ---
 
 ## Setup
- - Download Zip to run locally, or access the site from GitHub pages <a href="http://babyfeeder-github.io" target="_blank">`babyfeeder-github.io`</a>
+ - Download Zip to run locally, or access the site from GitHub pages <a href="https://babyfeeder.github.io/" target="_blank">`babyfeeder-github.io`</a>
  - The baby log is stored using ```localStorage``` in the browser. User data will not sync across devices; once started, only use the exact same browser + device to be continue building the list/graph data (see 'Backup' section for help). 
  - When the user device/browser removes 'cookies and other browsing data', this will likely erase ehe localStorage for this app. Also, if the browser app undergoes an update, that may also wipe the data.
 
